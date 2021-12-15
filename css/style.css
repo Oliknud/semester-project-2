@@ -92,6 +92,7 @@
   background-color: #1DA3DD;
   border: none;
   width: 100%;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -186,6 +187,7 @@ footer p {
   text-decoration: none;
   padding: 8px 0;
   text-align: center;
+  cursor: pointer;
 }
 
 .cart-btn:hover {
@@ -226,8 +228,24 @@ footer p {
   width: 250px;
 }
 
+.list-product .list-product-btn {
+  text-align: center;
+  cursor: pointer;
+}
+
 .cart-container {
   height: 100vh;
+}
+
+.cart-container h3 {
+  display: inline;
+}
+
+.cart-remove-item {
+  display: inline;
+  float: right;
+  height: 20px !important;
+  width: 20px !important;
 }
 
 .login-container {
