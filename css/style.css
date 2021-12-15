@@ -222,7 +222,8 @@ footer p {
 }
 
 .list-product img {
-  max-width: 250px;
+  height: 187.5px;
+  width: 250px;
 }
 
 .cart-container {
