@@ -1,0 +1,26 @@
+.list-product {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #262626;
+    .list-product-info {
+        max-width: 800px;
+        margin-left: 60px;
+
+        h4 {
+            display: inline;
+        }
+
+        a {
+            text-decoration: none;
+            width: 100px;
+            padding: 10px 20px;
+            border-radius: 4px;
+            float: right;
+        }
+    }
+
+    img {
+        max-width: 250px;
+    }
+}

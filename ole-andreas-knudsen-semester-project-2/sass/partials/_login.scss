@@ -1,0 +1,20 @@
+.login-container {
+    max-width: 400px;
+    margin: 140px auto;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+
+#login-form {
+    border: 1 solid black;
+    box-shadow: 0px 5px 15px 5px rgba(38,38,38,0.2);
+    padding: 40px;
+    border-radius: 4px;
+
+    #emailHelp, #passwordlHelp{
+        display: none;
+        color: red;
+    }
+}

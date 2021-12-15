@@ -1,0 +1,25 @@
+.search-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.input-box {
+    display: flex;
+    border: 1.5px solid #262626;
+    border-radius: 4px;
+    padding: 4px;
+
+    img {
+        margin: 4px;
+    }
+
+    input {
+        border: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
+}

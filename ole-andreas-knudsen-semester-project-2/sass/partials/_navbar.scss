@@ -1,0 +1,19 @@
+.navbar {
+    background-color: #262626;
+    z-index: 1;
+    width: 100%;
+  
+    .nav-link {
+        color: white !important;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+  
+
+}
+
+.navbar-home {
+    background-color: transparent;
+    position: absolute;
+}

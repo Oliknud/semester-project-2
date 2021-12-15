@@ -1,0 +1,27 @@
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+
+.card {
+    border: none;
+    margin-top: 40px;
+    filter: drop-shadow(0 5px 5px rgba(51, 51, 51, 0.2));
+}
+
+.card-img-top {
+    width: 200px;
+    margin: 16px auto 0;
+}
+
+.btn-primary {
+    background-color: #1DA3DD;
+    border: none;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #148bbe;
+}
