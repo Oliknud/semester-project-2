@@ -15,6 +15,20 @@
   position: absolute;
 }
 
+#user-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#user-active p {
+  margin: 0;
+}
+
 .carousel {
   background: radial-gradient(circle, rgba(39, 39, 39, 0.8) 0%, #272727 100%);
 }
@@ -265,9 +279,11 @@ footer p {
   border-radius: 4px;
 }
 
-#login-form #emailHelp, #login-form #passwordlHelp {
+#login-form .error-message {
   display: none;
-  color: red;
+  background-color: #ff5e00;
+  color: white;
+  padding: 10px;
 }
 
 .admin-container {

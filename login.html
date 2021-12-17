@@ -46,10 +46,11 @@
                 <a class="nav-link" href="products.html">Products</a>
               </li>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Sign in</a>
-            </li>
+  
             </ul>
+          </div>
+          <div class="nav-item" id="user-active">
+            
           </div>
           <a href="cart.html"><img src="images/shopping-cart.svg" alt="" /></a>
         </div>
@@ -57,22 +58,19 @@
     </header>
 
     <div class="login-container container">
-        <div id="login-form">
-            <form>
+            <form id="login-form">
                 <h1>Admin log in</h1>
+                <h5 class="error-message">Invalid email or password</h5>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">*Required</div>
-                    </div>
+                    <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp">
+                </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                    <div id="passwordlHelp" class="form-text">*Minimum 4 characters</div>
+                    <input type="password" class="form-control" id="password-input">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" id="submit-btn" class="btn btn-primary">Submit</button>
             </form>
-        </div>
     </div>
     
     <footer>

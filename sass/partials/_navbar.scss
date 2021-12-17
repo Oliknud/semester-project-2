@@ -8,12 +8,18 @@
         margin-left: 10px;
         font-size: 18px;
     }
-
-  
-
 }
 
 .navbar-home {
     background-color: transparent;
     position: absolute;
+}
+
+#user-active {
+    display: flex;
+    color: white;
+    align-items: center;
+    p {
+        margin: 0;
+    }
 }

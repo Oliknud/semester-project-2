@@ -13,8 +13,10 @@
     padding: 40px;
     border-radius: 4px;
 
-    #emailHelp, #passwordlHelp{
+    .error-message{
         display: none;
-        color: red;
+        background-color: rgb(255, 94, 0);
+        color: white;
+        padding: 10px;
     }
 }

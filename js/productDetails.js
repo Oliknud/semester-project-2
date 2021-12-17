@@ -1,15 +1,14 @@
 import { url } from "./api.js";
-import { getCart } from "./getCart.js";
-
+import { saveCart, getCart} from "./localStorage.js";
+import { adminMenu } from "./adminMenu.js";
 const qString = document.location.search;
 const param = new URLSearchParams(qString);
 const id = param.get("id");
 const productUrl = url + id;
-console.log(productUrl)
 
 const productImage = document.querySelector(".product-detail-img");
 const productInfo = document.querySelector(".product-info");
-
+adminMenu()
 function productDetails(product) {
     const productAtr = product.data.attributes;
     productImage.innerHTML = `<img src="${productAtr.imageUrl}" alt="product image" />`
@@ -25,16 +24,14 @@ function productDetails(product) {
 }
 
 
-/* const dataset = '" data-id="${product.id}" data-name="${productAtr.name}" data-desc="${productAtr.description}" data-price="${productAtr.price}" data-img="${productAtr.imageUrl}"'*/
 
 function handleClick() {
-    console.log(event)
     const id = this.dataset.id
     const name = this.dataset.name
     const desc = this.dataset.desc
     const price = this.dataset.price
     const img = this.dataset.img
-    console.log(desc)
+    
     const currentCart = getCart();
 
     const exists = currentCart.find(function (cartItem) {
@@ -51,14 +48,9 @@ function handleClick() {
     }
 }
 
-function saveCart(cart) {
-    localStorage.setItem("Cart", JSON.stringify(cart));
-}
-
 fetch(productUrl)
     .then(response => response.json())
     .then(data => {
-
         productDetails(data)})
     .catch((error) => {
         console.log(error)

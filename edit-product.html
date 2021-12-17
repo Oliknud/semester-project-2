@@ -40,12 +40,11 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="products.html">Products</a>
               </li>
-            </li>
             </ul>
           </div>
           <div class="nav-item" id="user-active">
@@ -56,9 +55,9 @@
       </nav>
     </header>
 
-    <div class="admin-container container">
+    <div class="edit-product container">
         <form id="admin-form">
-            <h2>Add product</h2>
+            <h2>Edit product</h2>
             <div class="mb-3">
                 <label for="product-name" class="form-label">Product name</label>
                 <input type="text" class="form-control" id="product-name" aria-describedby="emailHelp">
@@ -83,17 +82,14 @@
                 <label for="product-featured" class="form-label">Featured</label>
                 <input type="checkbox" class="" id="featured">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit edit</button>
         </form>
-    </div>
-
-    <div class="list-product-container container">
-
+        <button class="btn delete-btn btn-primary">Delete</button>
     </div>
     
     <footer>
       <p>© 2020 Copyright</p>
     </footer>
-    <script src="js/adminPage.js" type="module"></script>
+    <script src="./js/editProduct.js" type="module"></script>
   </body>
 </html>
