@@ -1,0 +1,20 @@
+.jumbotron {
+    color: white;
+    background: radial-gradient(circle, rgba(38,38,38,1) 80%, rgba(38,38,38,1) 100%); 
+    padding: 180px 0;
+
+    .row {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .col {
+        min-width: 300px;
+
+        img {
+            max-width: 350px;
+            
+        }
+    }
+
+}

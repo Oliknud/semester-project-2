@@ -2,16 +2,14 @@ import { getUser } from "./localStorage.js";
 
 export function adminMenu() {
     const userContainer = document.querySelector("#user-active");
-    const navbar = document.querySelector(".navbar-nav");
+    const adminLink = document.querySelector(".admin-link");
     const username = getUser();
 
     if (username) {
         userContainer.innerHTML = `<p>Logged in as ${username}</p>
                                     <a class="nav-link log-out" href="login.html">Log out</a>`;
 
-        navbar.innerHTML += `<li class="nav-item">
-                                <a class="nav-link" href="./adminPage.html">Admin</a>
-                            </li>`
+        adminLink.innerHTML += `<a class="nav-link" href="./adminPage.html">Admin</a>`
 
         const logOut = document.querySelector(".log-out");
         logOut.addEventListener("click", function() {

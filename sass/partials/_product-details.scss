@@ -1,7 +1,8 @@
 .product-details {
     display: flex;
     justify-content: center;
-    margin: 80px 0;
+    margin: 80px auto;
+    flex-wrap: wrap;
 
     img {
         max-width: 400px;
@@ -9,7 +10,7 @@
 }
 
 .product-info {
-    margin-left: 80px;
+    margin: 0 auto;
     max-width: 400px;
 }
 
