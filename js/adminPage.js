@@ -3,7 +3,6 @@ import { getToken } from "./localStorage.js";
 import { adminMenu } from "./adminMenu.js";
 const productContainer = document.querySelector(".list-product-container");
 adminMenu()
-
 const form = document.querySelector("#admin-form");
 const productName = document.querySelector("#product-name");
 const productPrice = document.querySelector("#product-price");
@@ -11,9 +10,11 @@ const productImageUrl = document.querySelector("#product-image");
 const productDescription = document.querySelector("#product-description");
 const productFeatured = document.querySelector("#featured");
 
+const adminLink = document.querySelector(".admin-link a");
+adminLink.classList.add("active");
 
 function productsPage(data) {
-    const products = data.data
+    const products = data.data;
     
     function renderProducts(products) {
         productContainer.innerHTML = "";

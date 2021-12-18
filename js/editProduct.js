@@ -56,7 +56,7 @@ async function editNewProduct(name, price, imageUrl, description, featured) {
     try {
         const response = await fetch(url, options);
         const json = await response.json();
-        /*  console.log(json) */
+        document.location.href = "./adminPage.html";
     }
     catch (error) {
         console.log(error)
