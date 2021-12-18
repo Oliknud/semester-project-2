@@ -41,3 +41,17 @@
     background-color: #148bbe;
     color: white;
 }
+.added-to-cart-cont {
+    display: none;
+    align-items: center;
+
+    img {
+        width: 20px;
+    }
+
+    .added-to-cart {
+        margin: 0 10px 0 0;
+        display: inline;
+        color: #0A7C15;
+    }
+}

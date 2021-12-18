@@ -276,6 +276,23 @@ footer p {
   color: white;
 }
 
+.added-to-cart-cont {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.added-to-cart-cont img {
+  width: 20px;
+}
+
+.added-to-cart-cont .added-to-cart {
+  margin: 0 10px 0 0;
+  display: inline;
+  color: #0A7C15;
+}
+
 .list-product {
   display: -webkit-box;
   display: -ms-flexbox;

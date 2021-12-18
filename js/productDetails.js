@@ -8,6 +8,7 @@ const productUrl = url + id;
 
 const productImage = document.querySelector(".product-detail-img");
 const productInfo = document.querySelector(".product-info");
+const addedToCart = document.querySelector(".added-to-cart-cont");
 adminMenu()
 function productDetails(product) {
     const productAtr = product.data.attributes;
@@ -23,21 +24,18 @@ function productDetails(product) {
     addToCart.addEventListener("click", handleClick);
 }
 
-
-
 function handleClick() {
     const id = this.dataset.id
     const name = this.dataset.name
     const desc = this.dataset.desc
     const price = this.dataset.price
     const img = this.dataset.img
-    
-    const currentCart = getCart();
 
+    const currentCart = getCart();
     const exists = currentCart.find(function (cartItem) {
       return cartItem.id === id;
     });
-
+    
     if (exists === undefined) {
       const product = { id, name, desc, price, img };
       currentCart.push(product);
