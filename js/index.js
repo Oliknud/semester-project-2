@@ -2,7 +2,7 @@ import { adminMenu } from "./adminMenu.js";
 import { url } from "./api.js";
 const cardContainer = document.querySelector(".product-list");
 adminMenu()
-
+cardContainer.innerHTML= `<img class="spinner" src="./images/Infinity-1.6s-200px.gif"/>`
 function productsPage(data) {
     const products = data.data
 

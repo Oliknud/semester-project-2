@@ -8,10 +8,13 @@ const productUrl = url + id;
 
 const productImage = document.querySelector(".product-detail-img");
 const productInfo = document.querySelector(".product-info");
-const addedToCart = document.querySelector(".added-to-cart-cont");
+const spinner = document.querySelector(".product-details.container");
+
 adminMenu()
+
 function productDetails(product) {
     const productAtr = product.data.attributes;
+    
     productImage.innerHTML = `<img src="${productAtr.imageUrl}" alt="product image" />`
     productInfo.innerHTML += `<h1>${productAtr.name}</h1>
                               <p>${productAtr.description}</p>
@@ -22,6 +25,7 @@ function productDetails(product) {
 
     const addToCart = document.querySelector(".cart-btn");
     addToCart.addEventListener("click", handleClick);
+   
 }
 
 function handleClick() {

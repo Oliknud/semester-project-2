@@ -118,6 +118,10 @@
   background-image: url(../../images/navbar-icon.svg) !important;
 }
 
+.spinner {
+  margin: 120px auto;
+}
+
 .jumbotron {
   color: white;
   background: radial-gradient(circle, #262626 80%, #262626 100%);
@@ -190,6 +194,10 @@ footer {
           align-items: center;
   padding: 20px 0;
   background-color: whitesmoke;
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
 }
 
 footer p {
@@ -293,6 +301,16 @@ footer p {
   color: #0A7C15;
 }
 
+.list-product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .list-product {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,10 +362,6 @@ footer p {
   .list-product img {
     margin: 0 auto;
   }
-}
-
-.cart-container {
-  height: 100vh;
 }
 
 .cart-container h3 {

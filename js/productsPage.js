@@ -3,7 +3,7 @@ import { adminMenu } from "./adminMenu.js";
 const productContainer = document.querySelector(".list-product-container");
 const search = document.querySelector(".search");
 adminMenu()
-
+productContainer.innerHTML= `<img class="spinner" src="./images/Infinity-1.6s-200px.gif"/>`
 function productsPage(data) {
     const products = data.data
     
@@ -52,6 +52,7 @@ function productsPage(data) {
 fetch(url)
     .then(response => response.json())
     .then(data => {
+        
         productsPage(data)})
     .catch((error) => {
         console.log(error)

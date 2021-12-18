@@ -4,7 +4,10 @@ footer {
     align-items: center;
     padding: 20px 0;
     background-color: rgb(245, 245, 245);
-
+        clear: both;
+        position: relative;
+        height: 200px;
+        margin-top: -200px;
     p {
         margin: 0;
     }
