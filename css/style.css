@@ -425,11 +425,6 @@ footer p {
   padding: 10px;
 }
 
-.admin-container {
-  max-width: 400px;
-  margin: 140px auto;
-}
-
 .admin-container h1 {
   margin-bottom: 20px;
 }
@@ -440,8 +435,9 @@ footer p {
           box-shadow: 0px 5px 15px 5px rgba(38, 38, 38, 0.2);
   padding: 40px;
   border-radius: 4px;
-  margin: 80px 0;
-  width: 500px;
+  margin: 80px auto;
+  max-width: 500px;
+  width: 100%;
 }
 
 #admin-form .productHelp {
