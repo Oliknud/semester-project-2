@@ -45,6 +45,7 @@ function add() {
     const price = parseFloat(productPrice.value);
     const imageUrl = productImageUrl.value.trim();
     const description = productDescription.value.trim();
+    console.log(description);
     const featured = productFeatured.checked;
 
     addNewProduct(name, price, imageUrl, description, featured);
