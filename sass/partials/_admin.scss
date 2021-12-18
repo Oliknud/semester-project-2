@@ -12,9 +12,27 @@
     box-shadow: 0px 5px 15px 5px rgba(38,38,38,0.2);
     padding: 40px;
     border-radius: 4px;
-
+    margin: 80px 0;
+    width: 500px;
     .productHelp {
         display: none;
         color: red;
     }
+
+    textarea {
+        resize: none;
+    }
+}
+
+.edit-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-btn {
+    background-color: rgb(199, 0, 0);
+    max-width: 420px;
+    margin: 20px auto;
 }
