@@ -10,10 +10,11 @@
 
     .col {
         min-width: 300px;
-
+        display: flex;
+        flex-direction: column;
         img {
-            max-width: 350px;
-            
+            max-width: 330px;
+            margin: 0 auto;
         }
     }
 }

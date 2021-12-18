@@ -9,3 +9,10 @@
 @import 'partials/cartPage';
 @import 'partials/login';
 @import 'partials/admin';
+body{ height:100vh;}
+
+/* Trick */
+body{ 
+  display:flex; 
+  flex-direction:column; 
+}
