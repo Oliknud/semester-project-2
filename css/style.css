@@ -471,6 +471,10 @@ footer p {
   margin: 20px auto;
 }
 
+.delete-btn:hover {
+  background-color: #960000;
+}
+
 body {
   height: 100vh;
 }
