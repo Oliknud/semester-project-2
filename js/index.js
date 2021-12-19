@@ -8,7 +8,6 @@ function productsPage(data) {
 
     function renderProducts(products) {
         cardContainer.innerHTML = "";
-
         for (let product of products) {
             let productAtr = product.attributes;
             if(productAtr.featured === true) {

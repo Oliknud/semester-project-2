@@ -17,7 +17,8 @@
     ></script>
 
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <meta name="description" content="Admin page">
+    <title>Headphones | Admin</title>
   </head>
   <body>
     <header>
@@ -36,7 +37,7 @@
           </button>
 
           <a href="index.html"><img src="images/headphones-logo.svg" alt="Logo" /></a>
-          <a class="cart-icon  show-icon" href="cart.html"><img src="images/shopping-cart.svg" alt="" /></a>
+          <a class="cart-icon  show-icon" href="cart.html"><img src="images/shopping-cart.svg" alt="Cart icon" /></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <div class="links">
@@ -55,12 +56,15 @@
               </li>
             </ul>
           </div>
-          <a class="cart-icon" href="cart.html"><img src="images/shopping-cart.svg" alt="" /></a>
+          <a class="cart-icon" href="cart.html"><img src="images/shopping-cart.svg" alt="Cart icon" /></a>
         </div>
       </nav>
     </header>
 
-    <div class="admin-container container">
+    <div class="admin-page container row">
+      <h1>Admin page</h1>
+      <div class="admin-container container col">
+        
         <form id="admin-form" class="admin-form-add">
             <h2>Add product</h2>
             <div class="mb-3">
@@ -80,7 +84,7 @@
             </div>
             <div class="mb-3">
                 <label for="product-description" class="form-label">Description</label>
-                <textarea type="text" class="form-control" id="product-description" cols="30" rows="10"></textarea>
+                <textarea type="text" class="form-control" id="product-description" cols="30" rows="6"></textarea>
                 <div class="productHelp" class="form-text">*Required</div>
             </div>
             <div class="mb-3">
@@ -91,12 +95,17 @@
         </form>
     </div>
 
-    <div class="list-product-container container">
+    <div class="list-product-container container col">
+
+    </div>
 
     </div>
     
+
+    
+    
     <footer>
-      <p>© 2020 Copyright</p>
+      <p>© 2021 Copyright</p>
     </footer>
     <script src="js/adminPage.js" type="module"></script>
   </body>
